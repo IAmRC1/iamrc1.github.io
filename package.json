@@ -1,0 +1,27 @@
+{
+  "name": "iamrc1.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel -p 3000",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IAmRC1/iamrc1.github.io.git"
+  },
+  "keywords": [],
+  "author": "Rishabh Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IAmRC1/iamrc1.github.io/issues"
+  },
+  "homepage": "https://github.com/IAmRC1/iamrc1.github.io#readme",
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.7.0",
+    "@parcel/transformer-webmanifest": "^2.7.0",
+    "parcel": "^2.7.0"
+  }
+}

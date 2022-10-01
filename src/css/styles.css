@@ -1,8 +1,4 @@
 /* =================================================================== 
- * Augustine Main Stylesheet
- * Template Ver. 1.0.0
- * 03-16-2022
- * ------------------------------------------------------------------
  *
  * TOC:
  * # SETTINGS
@@ -2864,7 +2860,7 @@ img.u-pull-left {
     --header-height : 10rem;
     display         : flex;
     flex-direction  : column;
-    min-height      : 100%;
+    min-height      : 30rem;
     overflow        : hidden;
     position        : relative;
 }
@@ -3195,7 +3191,7 @@ img.u-pull-left {
  *
  * ------------------------------------------------------------------- */
 .s-intro {
-    padding-top : calc(9.5 * var(--space));
+    padding-top : calc(5 * var(--space));
     width       : 100%;
     position    : relative;
 }
@@ -3211,29 +3207,32 @@ img.u-pull-left {
     z-index    : 2;
     width      : 100%;
     text-align : center;
-    position   : absolute;
+    /* position   : absolute;
     top        : 0;
-    left       : 0;
-}
-
-.s-intro__text h3 {
-    font-family    : var(--font-1);
-    font-size      : var(--text-xxxl);
-    font-weight    : 400;
-    line-height    : 1.0998;
-    letter-spacing : -.01em;
-    margin-top     : 0;
-    color          : var(--color-lighter);
+    left       : 0; */
 }
 
 .s-intro__text-huge {
-    --text-huge-size : 24.6rem;
+    --text-huge-size : 22rem;
     font-size        : var(--text-huge-size);
     line-height      : 1;
-    letter-spacing   : -0.015em;
-    margin-top       : calc(var(--text-huge-size) / 2 * -1.2);
-    margin-bottom    : var(--vspace-1_25);
-    color            : var(--color-lighter);
+    letter-spacing   : -0.1em;
+    /* margin-top       : calc(var(--text-huge-size) / 2 * -1.1); */
+    /* margin-bottom    : var(--vspace-1_25); */
+    background       : -webkit-linear-gradient(180deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    background-clip  : text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.s-intro__text h3 {
+    font-family    : var(--font-2);
+    font-size      : var(--text-xxxl);
+    font-weight    : 500;
+    line-height    : 1.1;
+    margin-top     : 0;
+    color          : var(--color-1)
 }
 
 /* --------------------------------------------------------------------
@@ -3242,6 +3241,7 @@ img.u-pull-left {
 .s-intro__bg {
     aspect-ratio        : 1/1;
     width               : 100%;
+    height              : 50rem;
     background-color    : var(--color-gray-4);
     background-image    : url(../images/intro-bg.jpg);
     background-repeat   : no-repeat;
@@ -3289,7 +3289,7 @@ img.u-pull-left {
 
 @media screen and (max-width: 1000px) {
     .s-intro {
-        padding-top : calc(7 * var(--space));
+        /* padding-top : calc(7 * var(--space)); */
     }
 }
 
@@ -3629,7 +3629,6 @@ img.u-pull-left {
 .s-works {
     padding-top      : calc(6 * var(--space));
     padding-bottom   : calc(5.5 * var(--space));
-    background-color : white;
 }
 
 /* ------------------------------------------------------------------- 
