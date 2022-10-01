@@ -5,8 +5,10 @@
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "start": "parcel -p 3000",
-    "build": "parcel build"
+    "start": "parcel src/index.html",
+    "build": "parcel build",
+    "predeploy": "rm -rf dist && parcel build src/index.html --no-source-maps --public-url ./",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,7 @@
   "devDependencies": {
     "@parcel/packager-raw-url": "^2.7.0",
     "@parcel/transformer-webmanifest": "^2.7.0",
+    "gh-pages": "^4.0.0",
     "parcel": "^2.7.0"
   }
 }
