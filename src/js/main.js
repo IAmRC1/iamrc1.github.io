@@ -205,7 +205,6 @@
         ssStickyHeader();
         ssAnimateOnScroll();
         ssBackToTop();
-
     })();
 
 })(document.documentElement);

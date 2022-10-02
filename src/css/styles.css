@@ -1296,6 +1296,7 @@ textarea {
 html {
     scroll-behavior: smooth;
 }
+
 body {
     font-family : var(--font-1);
     font-size   : var(--base-font-size);
@@ -2992,10 +2993,11 @@ img.u-pull-left {
 .s-header__social svg {
     height : 2.8rem;
     width  : 2.8rem;
+    transition: all 0.3s ease-in-out;
 }
 
-.s-header__social svg path {
-    fill : var(--color-text-dark);
+.s-header__social li a svg:hover {
+    transform: scale(1.25);
 }
 
 /* --------------------------------------------------------------------
@@ -3247,7 +3249,7 @@ img.u-pull-left {
     width               : 100%;
     height              : 50rem;
     background-color    : var(--color-gray-4);
-    background-image    : url(../images/intro-bg.jpg);
+    background-image    : url(../images/intro-bg.svg);
     background-repeat   : no-repeat;
     background-position : center;
     background-size     : cover;
@@ -3275,13 +3277,13 @@ img.u-pull-left {
  * ------------------------------------------------------------------- */
 @media screen and (max-width: 1400px) {
     .s-intro__text-huge {
-        --text-huge-size : 22rem;
+        --text-huge-size : 20rem;
     }
 }
 
 @media screen and (max-width: 1200px) {
     .s-intro__text-huge {
-        --text-huge-size : 18vw;
+        --text-huge-size : 16vw;
     }
 }
 
