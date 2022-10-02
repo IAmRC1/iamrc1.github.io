@@ -495,6 +495,7 @@ template {
 html {
     font-size  : var(--base-size);
     box-sizing : border-box;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -1292,10 +1293,6 @@ textarea {
 /* --------------------------------------------------------------------
  * ## base type styles
  * -------------------------------------------------------------------- */
-
-html {
-    scroll-behavior: smooth;
-}
 
 body {
     font-family : var(--font-1);
@@ -3198,6 +3195,7 @@ img.u-pull-left {
  * ------------------------------------------------------------------- */
 .s-intro {
     padding-top : calc(5 * var(--space));
+    padding-bottom : calc(5 * var(--space));
     width       : 100%;
     position    : relative;
 }
@@ -3210,7 +3208,7 @@ img.u-pull-left {
  * ## intro text
  * -------------------------------------------------------------------- */
 .s-intro__text {
-    z-index    : 2;
+    /* z-index    : 2; */
     width      : 100%;
     text-align : center;
     /* position   : absolute;
@@ -3223,8 +3221,8 @@ img.u-pull-left {
     font-size        : var(--text-huge-size);
     line-height      : 1;
     letter-spacing   : -0.1em;
-    /* margin-top       : calc(var(--text-huge-size) / 2 * -1.1); */
-    /* margin-bottom    : var(--vspace-1_25); */
+    /* margin-top       : calc(var(--text-huge-size) / 2 * -1.1);
+    margin-bottom    : var(--vspace-1_25); */
     background       : -webkit-linear-gradient(180deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
     background-clip  : text;
     -moz-background-clip: text;
@@ -3232,9 +3230,13 @@ img.u-pull-left {
     -webkit-text-fill-color: transparent;
 }
 
+.s-intro__text-huge span {
+    display: inline-block;
+}
+
 .s-intro__text h3 {
     font-family    : var(--font-2);
-    font-size      : var(--text-xxxl);
+    font-size      : var(--text-xxl);
     font-weight    : 500;
     line-height    : 1.1;
     margin-top     : 0;
@@ -3244,7 +3246,7 @@ img.u-pull-left {
 /* --------------------------------------------------------------------
  * ## intro bg
  * -------------------------------------------------------------------- */
-.s-intro__bg {
+/* .s-intro__bg {
     aspect-ratio        : 1/1;
     width               : 100%;
     height              : 50rem;
@@ -3269,7 +3271,7 @@ img.u-pull-left {
     background     : linear-gradient(180deg, black 5%, rgba(0, 0, 0, 0) 100%);
     pointer-events : none;
     opacity        : .12;
-}
+} */
 
 /* ------------------------------------------------------------------- 
  * responsive:
@@ -3338,12 +3340,12 @@ img.u-pull-left {
     --timeline-top-adjust          : calc(var(--subtitle-line-height) / 2);
     --timeline-vertical-border-pos : 8px;
 
-    padding-top                    : var(--vspace-5);
-    padding-bottom                 : var(--vspace-3);
+    padding-top                    : var(--vspace-3);
+    /* padding-bottom                 : var(--vspace-3); */
 }
 
 .s-about__block {
-    margin-bottom : var(--vspace-2);
+    /* margin-bottom : var(--vspace-2); */
 }
 
 .s-about__timeline {
@@ -3633,8 +3635,8 @@ img.u-pull-left {
  *
  * ------------------------------------------------------------------- */
 .s-works {
-    padding-top      : calc(6 * var(--space));
-    padding-bottom   : calc(5.5 * var(--space));
+    padding-top      : calc(3 * var(--space));
+    /* padding-bottom   : calc(0.5 * var(--space)); */
 }
 
 /* ------------------------------------------------------------------- 
@@ -3985,7 +3987,7 @@ img.u-pull-left {
  *
  * ------------------------------------------------------------------- */
 .s-footer {
-    padding-top    : calc(6 * var(--space));
+    padding-top    : calc(2 * var(--space));
     padding-bottom : var(--vspace-2_5);
     font-weight    : 300;
     position       : relative;

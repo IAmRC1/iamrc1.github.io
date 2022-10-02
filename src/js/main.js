@@ -1,25 +1,22 @@
 /* ===================================================================
  * 1.0.0 - Main JS
- *
- *
  * ------------------------------------------------------------------- */
 
 (function(html) {
 
     'use strict';
 
-
     /* animations
     * -------------------------------------------------- */
-    const tl = anime.timeline( {
+    const tl = anime.timeline({
         easing: 'easeInOutCubic',
-        duration: 800,
+        duration: 600,
         autoplay: false
     })
     .add({
         targets: '#loader',
         opacity: 0,
-        duration: 1000,
+        duration: 800,
         begin: function(anim) {
             window.scrollTo(0, 0);
         }
@@ -38,18 +35,24 @@
         opacity: [0, 1]
     }, '-=200')
     .add({
-        targets: '.s-intro__bg',
-        opacity: [0, 1],
-        duration: 1000,
-    })
-    .add({
         targets: ['.animate-on-load'],
         translateY: [100, 0],
         opacity: [0, 1],
         delay: anime.stagger(400)
+    })
+    .add({
+        targets: ['.letter'],
+        opacity: [0, 1],
+        translateY: 10, 
+        translateX: [-10, 30],
+        rotate: {
+          value: 360,
+          duration: 2000,
+          easing: 'easeInOutCubic'
+        }, 
+        scale: anime.stagger([0.75, 1], {from: 'center'}), 
+        delay: anime.stagger(300),
     });
-
-
 
    /* preloader
     * -------------------------------------------------- */
@@ -162,8 +165,8 @@
                         targets: current.querySelectorAll('[data-animate-el]'),
                         opacity: [0, 1],
                         translateY: [100, 0],
-                        delay: anime.stagger(200, {start: 200}),
-                        duration: 600,
+                        delay: anime.stagger(200, {start: 150}),
+                        duration: 400,
                         easing: 'easeInOutCubic',
                         begin: function(anim) {
                             current.classList.add('ss-animated');
