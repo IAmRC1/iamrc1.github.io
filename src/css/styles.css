@@ -4145,8 +4145,8 @@ img.u-pull-left {
 
 @media screen and (max-width: 400px) {
     .ss-go-top {
-        /* bottom : 4rem; */
-        /* right  : 2rem; */
+        bottom : 4rem;
+        right  : 2rem;
     }
 
     .ss-go-top a {
@@ -4155,7 +4155,7 @@ img.u-pull-left {
     }
 
     .ss-go-top svg {
-        height : 1.6rem;
-        width  : 1.6rem;
+        height : 2.4rem;
+        width  : 2.4rem;
     }
 }
