@@ -3201,7 +3201,7 @@ img.u-pull-left {
  * ------------------------------------------------------------------- */
 .s-intro {
     padding-top : calc(5 * var(--space));
-    padding-bottom : calc(5 * var(--space));
+    padding-bottom : var(--space);
     width       : 100%;
     position    : relative;
 }
@@ -3227,8 +3227,6 @@ img.u-pull-left {
     font-size        : var(--text-huge-size);
     line-height      : 1;
     letter-spacing   : -0.1em;
-    /* margin-top       : calc(var(--text-huge-size) / 2 * -1.1);
-    margin-bottom    : var(--vspace-1_25); */
     background       : -webkit-linear-gradient(180deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
     background-clip  : text;
     -moz-background-clip: text;
@@ -3255,35 +3253,10 @@ img.u-pull-left {
     border-radius: 0.25rem;
 }
 
-/* --------------------------------------------------------------------
- * ## intro bg
- * -------------------------------------------------------------------- */
-/* .s-intro__bg {
-    aspect-ratio        : 1/1;
-    width               : 100%;
-    height              : 50rem;
-    background-color    : var(--color-gray-4);
-    background-image    : url(../images/intro-bg.svg);
-    background-repeat   : no-repeat;
-    background-position : center;
-    background-size     : cover;
-    position            : relative;
+.s-intro__text h3 .scroll-down {
+    font-size: 3rem;
+    display: inline-block;
 }
-
-.s-intro__bg::after {
-    display        : block;
-    content        : "";
-    position       : absolute;
-    top            : 0;
-    left           : 0;
-    right          : 0;
-    bottom         : 0;
-    width          : 100%;
-    height         : 100%;
-    background     : linear-gradient(180deg, black 5%, rgba(0, 0, 0, 0) 100%);
-    pointer-events : none;
-    opacity        : .12;
-} */
 
 /* ------------------------------------------------------------------- 
  * responsive:
@@ -3314,28 +3287,34 @@ img.u-pull-left {
 }
 
 @media screen and (max-width: 900px) {
-    .s-intro__text h3 {
-        font-size : 3.2rem;
-    }
 
     .s-intro__text-huge {
         margin-bottom : var(--vspace-1);
     }
+
+    .s-intro__text h3 {
+        font-size : 3.2rem;
+    }
 }
 
 @media screen and (max-width: 800px) {
-    .s-intro__text h3 {
-        font-size : 2.8rem;
-    }
-
     .s-intro__text-huge {
         margin-bottom : var(--vspace-0_5);
+    }
+
+    .s-intro__text h3 {
+        font-size : 2.8rem;
     }
 }
 
 @media screen and (max-width: 600px) {
+    .s-intro {
+        padding-top : calc(7 * var(--space));
+        padding-bottom : calc(5 * var(--space));
+    }
+    
     .s-intro__text h3 {
-        font-size : 4.6vw;
+        font-size : 4.5vw;
     }
 }
 
@@ -3357,7 +3336,7 @@ img.u-pull-left {
 }
 
 .s-about__block {
-    /* margin-bottom : var(--vspace-2); */
+    margin-bottom : var(--vspace-2);
 }
 
 .s-about__timeline {
@@ -3599,7 +3578,7 @@ img.u-pull-left {
     .s-about {
         --timeline-left-padding : var(--vspace-1_25);
         padding-top             : var(--vspace-4);
-        padding-bottom          : var(--vspace-2);
+        /* padding-bottom          : var(--vspace-2); */
     }
 
     .s-about .text-subtitle::before {
@@ -3632,6 +3611,10 @@ img.u-pull-left {
 
     .timeline__bullet {
         display : none;
+    }
+
+    .s-about__skills {
+        padding-top : var(--vspace-1);
     }
 
     .s-about__skills .skill-bars li::before {
@@ -3967,8 +3950,8 @@ img.u-pull-left {
 
 @media screen and (max-width: 600px) {
     .s-works {
-        padding-top    : var(--vspace-5);
-        padding-bottom : var(--vspace-4_5);
+        padding-top    : var(--vspace-4);
+        /* padding-bottom : var(--vspace-4_5); */
     }
 
     .folio-item__title {
@@ -4080,7 +4063,7 @@ img.u-pull-left {
     transition : all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
     position   : fixed;
     bottom     : 12rem;
-    right      : 3.15rem;
+    right      : 4.5rem;
 }
 
 .ss-go-top a {
@@ -4120,6 +4103,10 @@ img.u-pull-left {
     .s-footer__contact-content .right-block {
         margin-left : auto;
     }
+
+    .ss-go-top {
+        right : 2.5rem;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -4135,7 +4122,7 @@ img.u-pull-left {
 
 @media screen and (max-width: 600px) {
     .s-footer {
-        padding-top : var(--vspace-5);
+        padding-top : var(--vspace-4);
     }
 
     .ss-copyright span {

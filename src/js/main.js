@@ -11,7 +11,7 @@
     const tl = anime.timeline({
         easing: 'easeInOutCubic',
         duration: 600,
-        autoplay: false
+        autoplay: true
     })
     .add({
         targets: '#loader',
@@ -48,11 +48,20 @@
           duration: 2000,
           easing: 'easeInOutQuad'
         },
-        skewY: '5deg',
+        skewY: 5,
         scale: anime.stagger([0.75, 1], {from: 'center'}), 
         delay: anime.stagger(150, {from: 'center'}), // increase delay by 150ms for each elements.
         easing: 'spring(1, 80, 10, 0)'
-    });
+    })
+    const scroller = anime({
+        targets: '.scroll-down',
+        translateY: 25,
+        duration: 1000,
+        easing: 'easeInOutQuad',
+        direction: 'alternate',
+        loop: true,
+        autoplay: true,
+    })
 
    /* preloader
     * -------------------------------------------------- */
@@ -67,6 +76,7 @@
             html.classList.remove('ss-preload');
             html.classList.add('ss-loaded');
             tl.play();
+            scroller.play();
         });
 
     }; // end ssPreloader
