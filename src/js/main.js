@@ -43,15 +43,15 @@
     .add({
         targets: ['.letter'],
         opacity: [0, 1],
-        translateY: 10, 
-        translateX: [-10, 30],
         rotate: {
           value: 360,
           duration: 2000,
-          easing: 'easeInOutCubic'
-        }, 
+          easing: 'easeInOutQuad'
+        },
+        skewY: '5deg',
         scale: anime.stagger([0.75, 1], {from: 'center'}), 
-        delay: anime.stagger(300),
+        delay: anime.stagger(150, {from: 'center'}), // increase delay by 150ms for each elements.
+        easing: 'spring(1, 80, 10, 0)'
     });
 
    /* preloader
