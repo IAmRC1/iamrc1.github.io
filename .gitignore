@@ -1,6 +1,8 @@
 .DS_Store
 .vscode
+.gitignore
 
 node_modules/
-package-lock.json
 dist/
+
+package-lock.json
