@@ -2880,7 +2880,7 @@ img.u-pull-left {
     z-index          : 100;
     display          : flex;
     height           : var(--header-height);
-    background-color : var(--color-body);
+    background-color : #CFE6E890;
     width            : 100%;
     transition       : height 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
     position         : absolute;
@@ -2893,6 +2893,8 @@ img.u-pull-left {
     border-bottom   : 1px solid var(--color-border);
     box-shadow      : var(--box-shadow);
     position        : fixed;
+    -webkit-backdrop-filter: saturate(50%) blur(8px);
+    backdrop-filter: saturate(50%) blur(8px);
 }
 
 .s-header__block {
