@@ -1,6 +1,6 @@
 .DS_Store
-.parcel-cache
 .vscode
 
 node_modules/
+package-lock.json
 dist/
