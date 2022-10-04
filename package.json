@@ -2,29 +2,30 @@
   "name": "iamrc1.github.io",
   "version": "1.0.0",
   "description": "extended cv for my paper resume",
-  "source": "index.htm",
-  "browserslist": "> 0.5%, last 2 versions, not dead",
-  "scripts": {
-    "dev": "vite",
-    "preview": "vite preview",
-    "clean": "rm -rf node_modules/ package-lock.json && npm i",
-    "predeploy": "rm -rf dist && vite build",
-    "deploy": "gh-pages -d dist"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/IAmRC1/iamrc1.github.io.git"
-  },
   "keywords": [
     "portfolio",
     "resume"
   ],
-  "author": "Rishabh Singh",
-  "license": "ISC",
+  "homepage": "https://github.com/IAmRC1/iamrc1.github.io#readme",
   "bugs": {
     "url": "https://github.com/IAmRC1/iamrc1.github.io/issues"
   },
-  "homepage": "https://github.com/IAmRC1/iamrc1.github.io#readme",
+  "license": "ISC",
+  "author": "Rishabh Singh",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IAmRC1/iamrc1.github.io.git"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "source": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "preview": "vite preview",
+    "build": "vite build",
+    "clean": "rm -rf node_modules/ dist/ package-lock.json && npm i",
+    "predeploy": "rm -rf dist && vite build",
+    "deploy": "gh-pages -d dist"
+  },
   "devDependencies": {
     "gh-pages": "^4.0.0",
     "vite": "^3.1.4"
