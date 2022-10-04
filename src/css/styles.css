@@ -3083,6 +3083,7 @@ img.u-pull-left {
 @media screen and (max-width: 1200px) {
     .s-header__nav a {
         font-size : 1.9rem;
+        display: inline-block;
     }
 }
 
@@ -3119,11 +3120,11 @@ img.u-pull-left {
 
     .s-header__nav-wrap {
         display          : block;
-        width            : 100%;
+        /* width            : 100%; */
         max-width        : none;
         transform        : scaleY(0);
         transform-origin : center top;
-        padding          : var(--vspace-2) 3.6rem var(--vspace-2);
+        padding          : var(--vspace-1) 3.6rem var(--vspace-1);
         background-color : var(--color-body);
         border-bottom    : 1px solid var(--color-border);
         box-shadow       : var(--box-shadow);
@@ -3145,13 +3146,14 @@ img.u-pull-left {
         font-size   : var(--text-lg);
         font-weight : 400;
         line-height : var(--vspace-1);
-        padding     : var(--vspace-0_375) 0;
+        padding     : var(--vspace-0_375);
+        text-align  : right;
     }
 
     .s-header__nav ul {
         display          : block;
         background-color : transparent;
-        text-align       : left;
+        text-align       : right;
         margin           : 0;
         border           : none;
     }
@@ -3162,6 +3164,7 @@ img.u-pull-left {
 
     .s-header__social {
         position : static;
+        justify-content: end;
     }
 
     .s-header__menu-toggle {
