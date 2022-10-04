@@ -3245,7 +3245,7 @@ img.u-pull-left {
     line-height    : 1.5;
     margin-top     : 0;
     color          : var(--color-1);
-    letter-spacing   : -0.1em;
+    letter-spacing   : -.1em;
 }
 
 .s-intro__text h3 mark {
@@ -3304,6 +3304,7 @@ img.u-pull-left {
 
     .s-intro__text h3 {
         font-size : 2.8rem;
+        letter-spacing: -.075em;
     }
 }
 
@@ -3315,6 +3316,7 @@ img.u-pull-left {
     
     .s-intro__text h3 {
         font-size : 4.5vw;
+        letter-spacing: -.05em;
     }
 }
 
