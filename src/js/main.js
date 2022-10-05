@@ -75,8 +75,6 @@
 
     }; // end ssPreloader
 
-
-
    /* mobile menu
     * ---------------------------------------------------- */ 
     const ssMobileMenu = function() {
@@ -115,8 +113,6 @@
         });
 
     }; // end ssMobileMenu
-
-
 
    /* sticky header
     * ------------------------------------------------------ */
@@ -215,3 +211,16 @@
     })();
 
 })(document.documentElement);
+
+(function() {
+    document.getElementById("current-year").innerHTML = new Date().getFullYear()
+})();
+
+window.onscroll = function() { scrollbar ()};
+
+function scrollbar() {
+    let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrolled = (winScroll / height) * 100;
+    document.getElementById("progress-scrollbar").value = scrolled;
+}
