@@ -216,7 +216,7 @@
     document.getElementById("current-year").innerHTML = new Date().getFullYear()
 })();
 
-window.onscroll = function() { scrollbar ()};
+window.onscroll = function() { scrollbar() };
 
 function scrollbar() {
     let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
