@@ -1837,16 +1837,6 @@ img,
 
 /* ===================================================================
  * # PRELOADER
- * 
- * 
- * -------------------------------------------------------------------
- * - markup:
- *
- * <div id="preloader">
- *     <div class="loader line"></div>
- * </div>
- *
- *
  * ------------------------------------------------------------------- */
 #preloader {
     position        : fixed;
@@ -1866,44 +1856,76 @@ img,
     display : none;
 }
 
-#loader {
-    background-color : var(--color-loader-light);
+.loader {
+    --path: #0d0f0f;
+    --dot: #5f9395;
+    --duration: 3s;
+    width: 44px;
+    height: 44px;
+    position: relative;
+    display: inline-block;
+    margin: 0 16px;
 }
-
-@-webkit-keyframes line {
-    from {
-        background-position : -60px 0;
+  
+.loader:before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    background: var(--dot);
+    top: 37px;
+    left: 19px;
+    transform: translate(-18px, -18px);
+    animation: dotRect var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+}
+  
+.loader svg circle {
+    fill: none;
+    stroke: var(--path);
+    stroke-width: 10px;
+    stroke-linejoin: round;
+    stroke-linecap: round;stroke-dasharray: 150 50 150 50;
+    stroke-dashoffset: 75;
+    animation: pathCircle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+}
+  
+@keyframes dotRect {
+    25% {
+      transform: translate(0, 0);
     }
-
-    to {
-        background-position : 60px 0;
+  
+    50% {
+      transform: translate(18px, -18px);
+    }
+  
+    75% {
+      transform: translate(0, -36px);
+    }
+  
+    100% {
+      transform: translate(-18px, -18px);
     }
 }
-
-@keyframes line {
-    from {
-        background-position : -60px 0;
+  
+@keyframes pathCircle {
+    25% {
+      stroke-dashoffset: 125;
     }
-
-    to {
-        background-position : 60px 0;
+  
+    50% {
+      stroke-dashoffset: 175;
+    }
+  
+    75% {
+      stroke-dashoffset: 225;
+    }
+  
+    100% {
+      stroke-dashoffset: 275;
     }
 }
-
-.line:before {
-    -webkit-animation : line .75s infinite alternate ease-in-out;
-    animation         : line .75s infinite alternate ease-in-out;
-    background        : -webkit-gradient(linear, left top, right top, from(var(--color-loader)), to(var(--color-loader)));
-    background        : linear-gradient(90deg, var(--color-loader), var(--color-loader));
-    background-repeat : no-repeat;
-    background-size   : 80px 4px;
-    content           : '';
-    display           : block;
-    height            : 4px;
-    width             : 80px;
-}
-
-
 
 /* ===================================================================
  * # FORM
