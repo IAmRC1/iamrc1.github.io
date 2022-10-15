@@ -40,13 +40,6 @@
         opacity: [0, 1],
         delay: anime.stagger(400)
     })
-    .add({
-        targets: ['.letter'],
-        opacity: [0.25, 1],
-        skewY: 5,
-        scale: anime.stagger([0.75, 1], {from: 'center'}), 
-        delay: anime.stagger(150, {from: 'center'}), // increase delay by 150ms for each elements
-    })
 
    /* preloader
     * -------------------------------------------------- */
