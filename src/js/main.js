@@ -40,22 +40,6 @@
         opacity: [0, 1],
         delay: anime.stagger(400)
     })
-    .add({
-        targets: ['.letter'],
-        opacity: [0.25, 1],
-        skewY: 5,
-        scale: anime.stagger([0.75, 1], {from: 'center'}), 
-        delay: anime.stagger(150, {from: 'center'}), // increase delay by 150ms for each elements
-    })
-    const scroller = anime({
-        targets: '.scroll-down',
-        translateY: 25,
-        duration: 1000,
-        easing: 'easeInOutQuad',
-        direction: 'alternate',
-        loop: true,
-        autoplay: true,
-    })
 
    /* preloader
     * -------------------------------------------------- */
@@ -70,7 +54,6 @@
             html.classList.remove('ss-preload');
             html.classList.add('ss-loaded');
             tl.play();
-            scroller.play();
         });
 
     }; // end ssPreloader
