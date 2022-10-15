@@ -20,11 +20,10 @@
   "source": "index.html",
   "scripts": {
     "dev": "vite",
-    "preview": "vite preview",
-    "build": "vite build",
+    "preview": "rm -rf dist/ && vite build && vite preview",
     "clean": "rm -rf node_modules/ dist/ package-lock.json && npm i",
-    "predeploy": "rm -rf dist && vite build",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "rm -rf dist/ && vite build",
+    "deploy": "gh-pages -d dist/"
   },
   "devDependencies": {
     "gh-pages": "^4.0.0",
