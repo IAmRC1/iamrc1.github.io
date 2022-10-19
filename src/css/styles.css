@@ -1867,11 +1867,17 @@ button.btn--pill {
     position       : absolute;
     top            : 50%;
     left           : 3.6rem;
+    display        : flex;
+    align-items    : center;
 }
 
 .s-header__branding .site-title {
     margin  : 0;
     padding : 0;
+}
+
+.s-header__branding #greeting {
+    font-size: 1.75rem;
 }
 
 .s-header__branding a {
@@ -1893,23 +1899,20 @@ button.btn--pill {
 .s-header__nav a {
     display             : block;
     font-size           : 2rem;
-    font-weight         : 400;
+    font-weight         : 600;
     line-height         : var(--vspace-1);
-    /* color               : var(--color-text-dark); */
     padding             : 0.25rem 1.8rem;
     transition          : all 0.3s ease-in-out;
     border-radius       : 0.25rem;
-    color               : var(--color-body);
-    background-color    : var(--color-1);
-    border              : 2px;
-    border-color        : var(--color-1);
+    color               : var(--color-1);
+    /* background-color    : var(--color-1); */
 }
 
 .s-header__nav a:focus,
 .s-header__nav a:hover {
-    background-color    : var(--color-2);
+    background-color    : var(--color-1);
     color               : var(--color-white);
-    border-color        : var(--color-2);
+    border-color        : var(--color-1);
 }
 
 .s-header__nav ul {
@@ -2101,7 +2104,7 @@ button.btn--pill {
     text-align : left;
     position   : absolute;
     top        : 30%;
-    right      : -15%;
+    right      : -5%;
     max-width  : 75%;
 }
 

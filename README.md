@@ -7,12 +7,8 @@ Redesign of my portfolio with JAM Stack and bundled with vite
 ## Acknowledgements
 
  - [StyleShout](https://styleshout.com)
+ - [AnimeJS](https://animejs.com/)
  - [vite](https://vite.dev)
-
-
-## Authors
-
-- [@IAmRC1](https://www.github.com/IAmRC1)
 
 
 ## Features

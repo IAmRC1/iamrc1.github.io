@@ -195,15 +195,28 @@
 
 })(document.documentElement);
 
-(function() {
-    document.getElementById("current-year").innerHTML = new Date().getFullYear()
-})();
-
 window.onscroll = function() { scrollbar() };
-
 function scrollbar() {
     let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     let scrolled = (winScroll / height) * 100;
     document.getElementById("progress-scrollbar").value = scrolled;
 }
+
+(function() {
+    const currentYear = new Date().getFullYear()
+    document.getElementById("current-year").innerHTML = currentYear
+})();
+
+(function() {
+    const currentHour = new Date().getHours();
+    if (currentHour > 5 && currentHour <= 11) {
+        document.getElementById("greeting").innerHTML = 'Good Morning! 🌞';
+    } else if (currentHour > 11 && currentHour <= 15) {
+        document.getElementById("greeting").innerHTML = 'Good Afternoon! 🔆';
+    } else if (currentHour > 15 && currentHour <= 22) {
+        document.getElementById("greeting").innerHTML = 'Good Evening! 🌙';
+    } else {
+        document.getElementById("greeting").innerHTML = 'Sleeping... 😴'
+    }
+})();
