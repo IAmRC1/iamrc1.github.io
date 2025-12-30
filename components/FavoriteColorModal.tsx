@@ -51,7 +51,7 @@ export function FavoriteColorModal() {
       const parsed = parseRgbTriplet(existing);
       if (parsed) {
         setHasCustom(true);
-        setValue(rgbTripletToHex(existing));
+        if (existing) setValue(rgbTripletToHex(existing));
         document.documentElement.style.setProperty(
           "--app-primary",
           `${parsed.r} ${parsed.g} ${parsed.b}`
