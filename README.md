@@ -1,47 +1,21 @@
 
-# Extended Portfolio
+# Portfolio (Next.js + Tailwind + Three.js)
 
-Redesign of my portfolio with JAM Stack and bundled with vite
+Modernized version of my portfolio built with Next.js App Router, TailwindCSS, and a lightweight Three.js hero.
 
-
-## Acknowledgements
-
- - [StyleShout](https://styleshout.com)
- - [AnimeJS](https://animejs.com/)
- - [vite](https://vite.dev)
-
-
-## Features
-
-- Light/dark mode toggle [TODO]
-- Scroll Progress
-- Animations
-- Live Chat
-
-
-## Run Locally
-
-Clone the project
+## Run locally
 
 ```bash
-  git clone https://github.com/IAmRC1/iamrc1.github.io.git
+npm install
+npm run dev
 ```
 
-Go to the project directory
+Then open `http://localhost:3000`.
 
-```bash
-  cd iamrc1.github.io
-```
+## Global heart counter (optional)
 
-Install dependencies
+The heart button uses a global counter via `POST /api/hearts`.
 
-```bash
-  npm i
-```
-
-Start the server
-
-```bash
-  npm run dev
-```
+- On Vercel, enable **Vercel KV** for this project and it will persist across deploys/visitors.
+- Without KV configured, the app falls back to an in-memory counter (resets on server restart) and then to local browser storage.
 
