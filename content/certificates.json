@@ -1,0 +1,74 @@
+[
+  {
+    "id": "js-01",
+    "domain": "javascript",
+    "type": "certificate",
+    "title": "JavaScript Algorithms & Data Structures",
+    "issuer": "freeCodeCamp",
+    "date": "2024-06-01",
+    "credentialUrl": "https://www.freecodecamp.org/certification/your-handle/javascript-algorithms-and-data-structures"
+  },
+  {
+    "id": "js-02",
+    "domain": "javascript",
+    "type": "certificate",
+    "title": "Modern JavaScript (ES6+)",
+    "issuer": "Udemy",
+    "date": "2023-11-15",
+    "credentialUrl": "https://www.udemy.com/certificate/your-id"
+  },
+  {
+    "id": "js-03",
+    "domain": "javascript",
+    "type": "badge",
+    "title": "JavaScript Skill Badge",
+    "issuer": "HackerRank",
+    "date": "2023-03-10",
+    "credentialUrl": "https://www.hackerrank.com/certificates/your-id"
+  },
+  {
+    "id": "js-04",
+    "domain": "javascript",
+    "type": "certificate",
+    "title": "Advanced JavaScript Patterns",
+    "issuer": "Frontend Masters",
+    "date": "2024-09-02",
+    "credentialUrl": "https://frontendmasters.com/courses/your-course"
+  },
+  {
+    "id": "js-05",
+    "domain": "javascript",
+    "type": "badge",
+    "title": "Problem Solving (Intermediate)",
+    "issuer": "HackerRank",
+    "date": "2022-12-05",
+    "credentialUrl": "https://www.hackerrank.com/certificates/your-id"
+  },
+  {
+    "id": "ts-01",
+    "domain": "typescript",
+    "type": "certificate",
+    "title": "TypeScript Fundamentals",
+    "issuer": "Pluralsight",
+    "date": "2024-02-20",
+    "credentialUrl": "https://app.pluralsight.com/your-certificate"
+  },
+  {
+    "id": "react-01",
+    "domain": "react",
+    "type": "certificate",
+    "title": "React Developer",
+    "issuer": "Meta",
+    "date": "2024-08-09",
+    "credentialUrl": "https://www.coursera.org/account/accomplishments/your-id"
+  },
+  {
+    "id": "cloud-01",
+    "domain": "cloud",
+    "type": "badge",
+    "title": "Cloud Practitioner Badge",
+    "issuer": "AWS",
+    "date": "2025-01-12",
+    "credentialUrl": "https://www.credly.com/badges/your-id"
+  }
+]

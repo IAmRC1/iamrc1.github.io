@@ -1,8 +1,15 @@
-.DS_Store
-.vscode
-.gitignore
+ter.DS_Store
+.vscode/
 
 node_modules/
+.next/
+out/
 dist/
 
-package-lock.json
+.data/
+
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env*
