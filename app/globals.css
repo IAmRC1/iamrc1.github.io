@@ -27,6 +27,8 @@ html.dark {
 
 html {
   scroll-behavior: smooth;
+  /* Responsive typography: 13px @ 360px, ramps to 16px by 768px+. */
+  font-size: clamp(13px, calc(13px + 3 * ((100vw - 360px) / 408)), 16px);
 }
 
 body {
