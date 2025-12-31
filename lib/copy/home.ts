@@ -1,16 +1,16 @@
 export const HOME_COPY = {
   hero: {
-    roleLine: "Senior software developer • Web platform engineering",
-    headline: "A portfolio that feels alive.",
+    roleLine: "works as a Lead Software Developer",
+    headline: "portfolio that feels alive!",
     lead:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. I build fast, reliable web products with an obsession for user experience.",
+      "I'm Rishabh, a product-minded fullstack engineer specializing in building performant, accessible, and delightful web applications. With close to a decade of experience, I have a passion for crafting seamless user experiences and writing clean, maintainable & scalable code. ",
     ctaWork: "See work",
     ctaContact: "Contact",
   },
   stats: {
-    shippedValue: "14+",
+    shippedValue: "16+",
     shippedLabel: "Projects shipped",
-    prsValue: "689+",
+    prsValue: "1689+",
     prsLabel: "PRs merged",
     certsValue: "28+",
     certsLabel: "Certifications",
@@ -25,7 +25,7 @@ export const HOME_COPY = {
   about: {
     title: "About",
     body:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Replace this section with your story: what you optimize for, your approach to engineering, and the kind of teams you like building with.",
+      "Currently, I lead a team of developers at Frontline Education, where we focus on adding new features to Human Capital Management app and migrate legacy code to modern solutions that prioritize user needs and business goals.",
     focusTitle: "Focus",
     focusBullets: [
       "Product-minded frontend engineering",
@@ -36,7 +36,7 @@ export const HOME_COPY = {
   },
   work: {
     title: "Work",
-    subtitle: "Selected projects (swap in real descriptions as you like).",
+    subtitle: "Selected projects I've worked on.",
   },
   contact: {
     title: "Contact",
@@ -44,6 +44,5 @@ export const HOME_COPY = {
     emailCta: "Email me",
     leaveLoveTitle: "Leave some love",
     leaveLoveBody: "Tap the heart — it fills up and each click is saved.",
-    journalLink: "Journal →",
   },
 } as const;

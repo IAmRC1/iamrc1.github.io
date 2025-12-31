@@ -49,8 +49,7 @@ export function GitHubProof({ username }: { username: string }) {
 
   return (
     <div className="flex items-center gap-2 text-sm text-zinc-700 dark:text-zinc-300">
-      <Github className="h-4 w-4" aria-hidden="true" />
-      <span className="font-medium text-zinc-900 dark:text-zinc-50">GitHub</span>
+      <Github className="h-6 w-6" aria-hidden="true" />
       <span className="text-zinc-600 dark:text-zinc-400">{text ?? "loading…"}</span>
     </div>
   );

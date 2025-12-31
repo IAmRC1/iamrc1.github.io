@@ -11,7 +11,7 @@ export const NAV_WEATHER_COPY = {
 export const DISTANCE_WEATHER_COPY = {
   title: "Location + Weather",
   intro:
-    "If you choose, I’ll use your location once to calculate how far you are from my location and show local weather. Your location is not stored.",
+    "If you choose, I'll use your location once to calculate how far you are from my location and show local weather. Your location is not stored.",
   buttons: {
     shareLocation: "Share location",
     notNow: "Not now",
@@ -24,7 +24,7 @@ export const DISTANCE_WEATHER_COPY = {
     geolocationUnsupported: "Geolocation is not supported in this browser.",
     couldNotAccess:
       "Could not access your location. Please allow permission and try again.",
-    couldntLoadTitle: "Couldn’t load",
+    couldntLoadTitle: "Couldn't load",
   },
   results: {
     title: "Results",

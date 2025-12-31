@@ -15,7 +15,7 @@ export default async function Page() {
   const latest = posts[0] ?? null;
 
   return (
-    <main className="min-h-dvh bg-white pt-16 text-zinc-950 dark:bg-zinc-950 dark:text-zinc-50">
+    <main className="min-h-dvh bg-white pt-28 text-zinc-950 dark:bg-zinc-950 dark:text-zinc-50 sm:pt-16">
       <ScrollProgress />
       <FavoriteColorModal />
       <HomeHeader />
